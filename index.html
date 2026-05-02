@@ -1,7 +1,10 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Gallery</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
@@ -16,31 +19,51 @@
         <a href="contact.html">Contact</a>
     </nav>
 </header>
-<div class="grid grid-3">
-    <div class="card">Images</div>
-    <div class="card">Images</div>
-    <div class="card">Images</div>
-</div>
-<div class="breadcrumb">
-    <a href="#">Home</a>
-    <span>-</span>
-    <a href="#">Gallery</a>
+<div class="carousel">
+
+    <input type="radio" name="slider" id="slide1" checked>
+    <input type="radio" name="slider" id="slide2">
+    <input type="radio" name="slider" id="slide3">
+
+    <div class="carousel-slides">
+        <div class="slide">
+            <img src="https://picsum.photos/900/500?random=1">
+        </div>
+        <div class="slide">
+            <img src="https://picsum.photos/900/500?random=2">
+        </div>
+        <div class="slide">
+            <img src="https://picsum.photos/900/500?random=3">
+        </div>
+    </div>
+
+    <div class="nav-dots">
+        <label for="slide1"></label>
+        <label for="slide2"></label>
+        <label for="slide3"></label>
+    </div>
+
 </div>
 
-<h2 style="text-align:center; margin-top:20px;">Gallery</h2>
+<section class="hero">
+    <h2>Capturing Moments, Creating Memories</h2>
+    <p>Welcome to my photography world where every image tells a story.</p>
+    <img src="https://picsum.photos/id/1005/800/400">
+</section>
 
-<div class="gallery">
-    <img src="https://picsum.photos/id/1011/300">
-    <img src="https://picsum.photos/id/1015/300">
-    <img src="https://picsum.photos/id/1016/300">
-    <img src="https://picsum.photos/id/1020/300">
-    <img src="https://picsum.photos/id/1024/300">
-    <img src="https://picsum.photos/id/1025/300">
-    <img src="https://picsum.photos/id/1035/300">
-    <img src="https://picsum.photos/id/1039/300">
-    <img src="https://picsum.photos/id/1043/300">
-    <img src="https://picsum.photos/id/1050/300">
-</div>
+<section>
+    <h2>What I Do</h2>
+    <div class="card">Nature Photography</div>
+    <div class="card">Street Photography</div>
+    <div class="card">Portraits</div>
+    <div class="card">Landscapes</div>
+</section>
+
+<section>
+    <h2>Explore</h2>
+    <p><a href="gallery.html">View Gallery</a></p>
+    <p><a href="contact.html">Contact Me</a></p>
+</section>
 
 <footer>
     <p>© 2026 My Photography Portfolio</p>
@@ -48,4 +71,5 @@
 
 </body>
 </html>
+
 

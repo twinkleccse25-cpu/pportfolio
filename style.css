@@ -260,7 +260,7 @@ footer {
 
 .carousel-slides {
     display: flex;
-    width: 300%;
+    width: 100%;
     transition: transform 0.5s ease-in-out;
 }
 
@@ -274,7 +274,7 @@ footer {
     display: block;
 }
 
-/* IMPORTANT FIX */
+
 #slide1:checked ~ .carousel-slides {
     transform: translateX(0);
 }
